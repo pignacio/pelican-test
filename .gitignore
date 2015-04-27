@@ -1,0 +1,13 @@
+# Pelican directories
+cache
+output
+
+# PID files
+
+*.pid
+
+# Python compiled files
+
+*.py[co]
+__pycache__
+
