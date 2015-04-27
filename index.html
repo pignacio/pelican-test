@@ -21,7 +21,52 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://pignacio.github.io/pelican-test/boobstrapeando-pelican.html">Boobstrapeando pelican</a></h1>
+                    <h1 class="entry-title"><a href="http://pignacio.github.io/pelican-test/agregando-articulos.html">Agregando articulos</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-04-26T21:19:00+02:00">
+                Published: dom 26 abril 2015
+        </abbr>
+		<br />
+        <abbr class="modified" title="2015-04-26T21:19:00+02:00">
+                Updated: dom 26 abril 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://pignacio.github.io/pelican-test/author/nach.html">Nach</a>
+        </address>
+<p>In <a href="http://pignacio.github.io/pelican-test/category/misc.html">misc</a>. </p>
+<p>tags: <a href="http://pignacio.github.io/pelican-test/tag/articulo.html">articulo</a> </p>
+</footer><!-- /.post-info --><p>Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
+content, por ejemplo  <tt class="docutils literal"><span class="pre">content/agregando-articulos.rst</span></tt>.</p>
+<p>Es re re re importante agregarle unos tags al archivo arriba, apenas despues
+del título. Por ejemplo:</p>
+<pre class="code rest literal-block">
+<span class="gh">Agregando articulos</span>
+<span class="gh">###################</span>
+
+
+<span class="nc">:date:</span> <span class="nf">2015-04-26 21:19</span>
+<span class="nc">:modified:</span> <span class="nf">2015-04-26 21:19</span>
+<span class="nc">:categories:</span> <span class="nf">misc</span>
+<span class="nc">:tags:</span> <span class="nf">articulo</span>
+</pre>
+<p><strong>OJO!</strong> si el tag <tt class="docutils literal">:date:</tt> no está, el archivo nunca se procesa :(</p>
+<p>Esta es una de las cosas que me molestan de pelican, nikola te agrega esa
+fecha automaticamente :)</p>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://pignacio.github.io/pelican-test/boobstrapeando-pelican.html" rel="bookmark"
+                           title="Permalink to Boobstrapeando pelican">Boobstrapeando pelican</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-04-26T18:46:00+02:00">
                 Published: dom 26 abril 2015
@@ -36,97 +81,14 @@
         </address>
 <p>In <a href="http://pignacio.github.io/pelican-test/category/misc.html">misc</a>. </p>
 
-</footer><!-- /.post-info --><p>Antes que nada hay que instalar pelican, pero eso es mejor verlo en persona,
+</footer><!-- /.post-info -->                <p>Antes que nada hay que instalar pelican, pero eso es mejor verlo en persona,
 debería ser un toque.</p>
 <p>Primero, haces un repo en <a class="reference external" href="http://www.github.com">github</a>. Si lo vas a hostear en las github pages, la
 url va a terminar siendo <tt class="docutils literal"><span class="pre">http://jpalandri.github.io/&lt;repo&gt;</span></tt>.</p>
-<p>Te clonas el repo, y haces <tt class="docutils literal">cd</tt> adentro:</p>
-<pre class="code shell literal-block">
-verne :: ~/misc/juli % git clone git&#64;github.com:pignacio/pelican-test
-Cloning into <span class="s1">'pelican-test'</span>...
-remote: Counting objects: 3, <span class="k">done</span>.
-remote: Total <span class="m">3</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>, pack-reused 0
-Receiving objects: 100% <span class="o">(</span>3/3<span class="o">)</span>, <span class="k">done</span>.
-Checking connectivity... <span class="k">done</span>.
-verne :: ~/misc/juli % <span class="nb">cd </span>pelican-test
-</pre>
-<p>Ahi corrés <tt class="docutils literal"><span class="pre">pelican-quickstart</span></tt> y contestás las preguntas correspondientes:</p>
-<pre class="code shell literal-block">
-verne :: misc/juli/pelican-test ‹master› % pelican-quickstart
-Welcome to pelican-quickstart v3.5.0.
-
-This script will <span class="nb">help </span>you create a new Pelican-based website.
-
-Please answer the following questions so this script can generate the files
-needed by Pelican.
-
-
-&gt; Where <span class="k">do</span> you want to create your new web site? <span class="o">[</span>.<span class="o">]</span>
-&gt; What will be the title of this web site? Testeando pelican
-&gt; Who will be the author of this web site? Nach
-&gt; What will be the default language of this web site? <span class="o">[</span>en<span class="o">]</span>
-&gt; Do you want to specify a URL prefix? e.g., http://example.com   <span class="o">(</span>Y/n<span class="o">)</span> y
-&gt; What is your URL prefix? <span class="o">(</span>see above example<span class="p">;</span> no trailing slash<span class="o">)</span> http://pignacio.github.io/pelican-test
-&gt; Do you want to <span class="nb">enable </span>article pagination? <span class="o">(</span>Y/n<span class="o">)</span>
-&gt; How many articles per page <span class="k">do</span> you want? <span class="o">[</span>10<span class="o">]</span>
-&gt; Do you want to generate a Fabfile/Makefile to automate generation and publishing? <span class="o">(</span>Y/n<span class="o">)</span>
-&gt; Do you want an auto-reload <span class="p">&amp;</span> simpleHTTP script to assist with theme and site development? <span class="o">(</span>Y/n<span class="o">)</span>
-&gt; Do you want to upload your website using FTP? <span class="o">(</span>y/N<span class="o">)</span>
-&gt; Do you want to upload your website using SSH? <span class="o">(</span>y/N<span class="o">)</span>
-&gt; Do you want to upload your website using Dropbox? <span class="o">(</span>y/N<span class="o">)</span>
-&gt; Do you want to upload your website using S3? <span class="o">(</span>y/N<span class="o">)</span>
-&gt; Do you want to upload your website using Rackspace Cloud Files? <span class="o">(</span>y/N<span class="o">)</span>
-&gt; Do you want to upload your website using GitHub Pages? <span class="o">(</span>y/N<span class="o">)</span> y
-&gt; Is this your personal page <span class="o">(</span>username.github.io<span class="o">)</span>? <span class="o">(</span>y/N<span class="o">)</span> n
-Done. Your new project is available at /home/ignacio/misc/juli/pelican-test
-</pre>
-<p>Agregá un <tt class="docutils literal">.gitignore</tt> con lo que sigue, para no comitear los htmls
-generados y otras cosas que no van:</p>
-<pre class="code literal-block">
-# Pelican directories
-cache
-output
-
-# PID files
-
-*.pid
-
-# Python compiled files
-
-*.py[co]
-__pycache__
-</pre>
-<p>Commiteamos y pusheamos eso a github:</p>
-<pre class="code shell literal-block">
-verne :: misc/juli/pelican-test ‹master*› % git add .
-verne :: misc/juli/pelican-test ‹master*› % git commit -m <span class="s2">&quot;Initial commit&quot;</span>
-<span class="o">[</span>master 059e0e5<span class="o">]</span> Initial commit
- <span class="m">5</span> files changed, <span class="m">345</span> insertions<span class="o">(</span>+<span class="o">)</span>
- create mode <span class="m">100644</span> Makefile
- create mode <span class="m">100755</span> develop_server.sh
- create mode <span class="m">100644</span> fabfile.py
- create mode <span class="m">100644</span> pelicanconf.py
- create mode <span class="m">100644</span> publishconf.py
-verne :: misc/juli/pelican-test ‹master› % git push
-Counting objects: 8, <span class="k">done</span>.
-Delta compression using up to <span class="m">6</span> threads.
-Compressing objects: 100% <span class="o">(</span>7/7<span class="o">)</span>, <span class="k">done</span>.
-Writing objects: 100% <span class="o">(</span>7/7<span class="o">)</span>, 4.19 KiB <span class="p">|</span> <span class="m">0</span> bytes/s, <span class="k">done</span>.
-Total <span class="m">7</span> <span class="o">(</span>delta 0<span class="o">)</span>, reused <span class="m">0</span> <span class="o">(</span>delta 0<span class="o">)</span>
-To git&#64;github.com:pignacio/pelican-test
-   1f5c59c..059e0e5  master -&gt; master
-</pre>
-<p>Para confirar que todo está funcionando, podes hacer un push del sitio vacío a
-las github pages con:</p>
-<pre class="code literal-block">
-verne :: misc/juli/pelican-test ‹master› % make github
-</pre>
-                </article>
-            </aside><!-- /#featured -->
-                <section id="content" class="body">
-                    <h1>Other articles</h1>
-                    <hr />
-                    <ol id="posts-list" class="hfeed">
+<p>Te clonas el repo, y haces ...</p>
+                <a class="readmore" href="http://pignacio.github.io/pelican-test/boobstrapeando-pelican.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
 
             <li><article class="hentry">
                 <header>

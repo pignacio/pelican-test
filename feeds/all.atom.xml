@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Testeando pelican</title><link href="http://pignacio.github.io/pelican-test/" rel="alternate"></link><link href="http://pignacio.github.io/pelican-test/feeds/all.atom.xml" rel="self"></link><id>http://pignacio.github.io/pelican-test/</id><updated>2015-04-26T18:46:00+02:00</updated><entry><title>Boobstrapeando pelican</title><link href="http://pignacio.github.io/pelican-test/boobstrapeando-pelican.html" rel="alternate"></link><updated>2015-04-26T18:46:00+02:00</updated><author><name>Ignacio Rossi</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/boobstrapeando-pelican.html</id><summary type="html">&lt;p&gt;Antes que nada hay que instalar pelican, pero eso es mejor verlo en persona,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Testeando pelican</title><link href="http://pignacio.github.io/pelican-test/" rel="alternate"></link><link href="http://pignacio.github.io/pelican-test/feeds/all.atom.xml" rel="self"></link><id>http://pignacio.github.io/pelican-test/</id><updated>2015-04-26T21:19:00+02:00</updated><entry><title>Agregando articulos</title><link href="http://pignacio.github.io/pelican-test/agregando-articulos.html" rel="alternate"></link><updated>2015-04-26T21:19:00+02:00</updated><author><name>Nach</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/agregando-articulos.html</id><summary type="html">&lt;p&gt;Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
+content, por ejemplo  &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;content/agregando-articulos.rst&lt;/span&gt;&lt;/tt&gt;.&lt;/p&gt;
+&lt;p&gt;Es re re re importante agregarle unos tags al archivo arriba, apenas despues
+del título. Por ejemplo:&lt;/p&gt;
+&lt;pre class="code rest literal-block"&gt;
+&lt;span class="gh"&gt;Agregando articulos&lt;/span&gt;
+&lt;span class="gh"&gt;###################&lt;/span&gt;
+
+
+&lt;span class="nc"&gt;:date:&lt;/span&gt; &lt;span class="nf"&gt;2015-04-26 21:19&lt;/span&gt;
+&lt;span class="nc"&gt;:modified:&lt;/span&gt; &lt;span class="nf"&gt;2015-04-26 21:19&lt;/span&gt;
+&lt;span class="nc"&gt;:categories:&lt;/span&gt; &lt;span class="nf"&gt;misc&lt;/span&gt;
+&lt;span class="nc"&gt;:tags:&lt;/span&gt; &lt;span class="nf"&gt;articulo&lt;/span&gt;
+&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;OJO!&lt;/strong&gt; si el tag &lt;tt class="docutils literal"&gt;:date:&lt;/tt&gt; no está, el archivo nunca se procesa :(&lt;/p&gt;
+&lt;p&gt;Esta es una de las cosas que me molestan de pelican, nikola te agrega esa
+fecha automaticamente :)&lt;/p&gt;
+</summary><category term="articulo"></category></entry><entry><title>Boobstrapeando pelican</title><link href="http://pignacio.github.io/pelican-test/boobstrapeando-pelican.html" rel="alternate"></link><updated>2015-04-26T18:46:00+02:00</updated><author><name>Ignacio Rossi</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/boobstrapeando-pelican.html</id><summary type="html">&lt;p&gt;Antes que nada hay que instalar pelican, pero eso es mejor verlo en persona,
 debería ser un toque.&lt;/p&gt;
 &lt;p&gt;Primero, haces un repo en &lt;a class="reference external" href="http://www.github.com"&gt;github&lt;/a&gt;. Si lo vas a hostear en las github pages, la
 url va a terminar siendo &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;http://jpalandri.github.io/&amp;lt;repo&amp;gt;&lt;/span&gt;&lt;/tt&gt;.&lt;/p&gt;
