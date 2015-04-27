@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Testeando pelican</title><link href="http://pignacio.github.io/pelican-test/" rel="alternate"></link><link href="http://pignacio.github.io/pelican-test/feeds/all.atom.xml" rel="self"></link><id>http://pignacio.github.io/pelican-test/</id><updated>2015-04-26T21:19:00+02:00</updated><entry><title>Agregando articulos</title><link href="http://pignacio.github.io/pelican-test/agregando-articulos.html" rel="alternate"></link><updated>2015-04-26T21:19:00+02:00</updated><author><name>Nach</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/agregando-articulos.html</id><summary type="html">&lt;p&gt;Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Testeando pelican</title><link href="http://pignacio.github.io/pelican-test/" rel="alternate"></link><link href="http://pignacio.github.io/pelican-test/feeds/all.atom.xml" rel="self"></link><id>http://pignacio.github.io/pelican-test/</id><updated>2015-04-26T21:35:00+02:00</updated><entry><title>Mirando el blog localmente</title><link href="http://pignacio.github.io/pelican-test/mirando-el-blog-localmente.html" rel="alternate"></link><updated>2015-04-26T21:35:00+02:00</updated><author><name>Nach</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/mirando-el-blog-localmente.html</id><summary type="html">&lt;p&gt;Para testear el blog localmente, se puede usar:&lt;/p&gt;
+&lt;pre class="code shell literal-block"&gt;
+make devserver
+&lt;/pre&gt;
+&lt;p&gt;Eso deja corriendo un server en background que se autorecarga cuando modificas
+algún archivo.&lt;/p&gt;
+&lt;p&gt;Por default queda corriendo en &lt;a class="reference external" href="http://localhost:8000"&gt;http://localhost:8000&lt;/a&gt;.&lt;/p&gt;
+</summary></entry><entry><title>Publicando en las Github pages</title><link href="http://pignacio.github.io/pelican-test/publicando-en-las-github-pages.html" rel="alternate"></link><updated>2015-04-26T21:27:00+02:00</updated><author><name>Nach</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/publicando-en-las-github-pages.html</id><summary type="html">&lt;p&gt;Para publicar en las github pages, hay que tener instalado &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;gph-import&lt;/span&gt;&lt;/tt&gt;
+(hablar con el Nacho de turno para solucionar eso :)&lt;/p&gt;
+&lt;p&gt;Si eso está, solo hay que correr:&lt;/p&gt;
+&lt;pre class="code shell literal-block"&gt;
+make github
+&lt;/pre&gt;
+</summary></entry><entry><title>Agregando articulos</title><link href="http://pignacio.github.io/pelican-test/agregando-articulos.html" rel="alternate"></link><updated>2015-04-26T21:19:00+02:00</updated><author><name>Nach</name></author><id>tag:pignacio.github.io,2015-04-26:pelican-test/agregando-articulos.html</id><summary type="html">&lt;p&gt;Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
 content, por ejemplo  &lt;tt class="docutils literal"&gt;&lt;span class="pre"&gt;content/agregando-articulos.rst&lt;/span&gt;&lt;/tt&gt;.&lt;/p&gt;
 &lt;p&gt;Es re re re importante agregarle unos tags al archivo arriba, apenas despues
 del título. Por ejemplo:&lt;/p&gt;

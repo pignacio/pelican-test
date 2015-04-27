@@ -21,7 +21,74 @@
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="http://pignacio.github.io/pelican-test/agregando-articulos.html">Agregando articulos</a></h1>
+                    <h1 class="entry-title"><a href="http://pignacio.github.io/pelican-test/mirando-el-blog-localmente.html">Mirando el blog localmente</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2015-04-26T21:35:00+02:00">
+                Published: dom 26 abril 2015
+        </abbr>
+		<br />
+        <abbr class="modified" title="2015-04-26T21:35:00+02:00">
+                Updated: dom 26 abril 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://pignacio.github.io/pelican-test/author/nach.html">Nach</a>
+        </address>
+<p>In <a href="http://pignacio.github.io/pelican-test/category/misc.html">misc</a>. </p>
+
+</footer><!-- /.post-info --><p>Para testear el blog localmente, se puede usar:</p>
+<pre class="code shell literal-block">
+make devserver
+</pre>
+<p>Eso deja corriendo un server en background que se autorecarga cuando modificas
+algún archivo.</p>
+<p>Por default queda corriendo en <a class="reference external" href="http://localhost:8000">http://localhost:8000</a>.</p>
+                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://pignacio.github.io/pelican-test/publicando-en-las-github-pages.html" rel="bookmark"
+                           title="Permalink to Publicando en las Github pages">Publicando en las Github pages</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2015-04-26T21:27:00+02:00">
+                Published: dom 26 abril 2015
+        </abbr>
+		<br />
+        <abbr class="modified" title="2015-04-26T21:27:00+02:00">
+                Updated: dom 26 abril 2015
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="http://pignacio.github.io/pelican-test/author/nach.html">Nach</a>
+        </address>
+<p>In <a href="http://pignacio.github.io/pelican-test/category/misc.html">misc</a>. </p>
+
+</footer><!-- /.post-info -->                <p>Para publicar en las github pages, hay que tener instalado <tt class="docutils literal"><span class="pre">gph-import</span></tt>
+(hablar con el Nacho de turno para solucionar eso :)</p>
+<p>Si eso está, solo hay que correr:</p>
+<pre class="code shell literal-block">
+make github
+</pre>
+
+                <a class="readmore" href="http://pignacio.github.io/pelican-test/publicando-en-las-github-pages.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="http://pignacio.github.io/pelican-test/agregando-articulos.html" rel="bookmark"
+                           title="Permalink to Agregando articulos">Agregando articulos</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2015-04-26T21:19:00+02:00">
                 Published: dom 26 abril 2015
@@ -36,7 +103,7 @@
         </address>
 <p>In <a href="http://pignacio.github.io/pelican-test/category/misc.html">misc</a>. </p>
 <p>tags: <a href="http://pignacio.github.io/pelican-test/tag/articulo.html">articulo</a> </p>
-</footer><!-- /.post-info --><p>Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
+</footer><!-- /.post-info -->                <p>Para agregar un articulo, tenés que crear un archivo adentro de la carpeta
 content, por ejemplo  <tt class="docutils literal"><span class="pre">content/agregando-articulos.rst</span></tt>.</p>
 <p>Es re re re importante agregarle unos tags al archivo arriba, apenas despues
 del título. Por ejemplo:</p>
@@ -48,16 +115,15 @@ del título. Por ejemplo:</p>
 <span class="nc">:date:</span> <span class="nf">2015-04-26 21:19</span>
 <span class="nc">:modified:</span> <span class="nf">2015-04-26 21:19</span>
 <span class="nc">:categories:</span> <span class="nf">misc</span>
-<span class="nc">:tags:</span> <span class="nf">articulo</span>
-</pre>
-<p><strong>OJO!</strong> si el tag <tt class="docutils literal">:date:</tt> no está, el archivo nunca se procesa :(</p>
-<p>Esta es una de las cosas que me molestan de pelican, nikola te agrega esa
-fecha automaticamente :)</p>
-                </article>
+<span class="nc">:tags:</span> <span class="nf">articulo ...</span></pre>
+                <a class="readmore" href="http://pignacio.github.io/pelican-test/agregando-articulos.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
 <p class="paginator">
     Page 1 / 1
 </p>
-            </aside><!-- /#featured -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
                 <div class="blogroll">
                         <h2>blogroll</h2>
